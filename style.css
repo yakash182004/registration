@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.google-btn {
+  background-color: #24292e;
+  color: white;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.google-btn:hover {
+  background-color: #eee;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+.confirmation {
+  margin-top: 10px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+.gmail-btn {
+background-color: #24292e;
+  color: white;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+.github-btn {
+  background-color: #24292e;
+  color: white;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
